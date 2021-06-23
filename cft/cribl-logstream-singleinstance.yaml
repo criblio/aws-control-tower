@@ -12,11 +12,11 @@ Parameters:
   VpcCIDR:
     Description: Please enter the IP range (CIDR notation) for this VPC
     Type: String
-    Default: 
+    Default: 10.11.0.0/16
   PublicSubnet1CIDR:
     Description: Please enter the IP range (CIDR notation) for the public subnet in the first Availability Zone
     Type: String
-    Default: 
+    Default: 10.11.10.0/24
   sshAccessCidr:
     Type: String
     AllowedPattern: ^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/([0-9]|[1-2][0-9]|3[0-2]))$
@@ -286,7 +286,7 @@ Resources:
       SubnetId: !Ref PublicSubnet1
       SecurityGroupIds:
       - !Ref ec2SingleSecurityGroup
-            UserData: !Base64
+      UserData: !Base64
         Fn::Sub:
           - |
               #cloud-config
@@ -296,6 +296,8 @@ Resources:
                 - sleep 10
                 - cloud-init query -f "$(cat /opt/cribl_build/users.json.j2)" > /opt/cribl/local/cribl/auth/users.json
                 - chown -R cribl:cribl /opt/cribl
+                
+          - s3DefaultDestinationBucket: !Ref s3DefaultDestinationBucket
       Tags:
       - Key: Name
         Value: Cribl LogStream Single Instance
