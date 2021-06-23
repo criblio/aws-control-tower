@@ -83,7 +83,7 @@ Parameters:
     Description: >-
       Base URL for Cribl CloudFormation template - Logstream template url
     Type: String
-    Default: 'https://cribl-marketplace-public-artifacts-us-west-2.s3.us-west-2.amazonaws.com/logstream/2.4.5/standard/single/template/template.yaml'
+    Default: 'https://cribl-aws-integrations.s3.us-west-2.amazonaws.com/control-tower/template/cribl-logstream-singleinstance.yaml'
 
 Resources:
 
