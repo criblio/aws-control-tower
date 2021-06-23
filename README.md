@@ -21,7 +21,7 @@
 
 ## Solution Design
 
-![](images/cribl-arch-large.png)
+![](images/cribl-arch.png)
 
 
 ## How to Install and Test
