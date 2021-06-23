@@ -38,7 +38,3 @@
  	- This can take up to 30 mins for the account to be sucessfully created and the AWS Control Tower Lifecycle Event to trigger
  	- Login to the AWS Control Tower managed account - 
  		- Validate that an AWS CloudFormation stack instance has been provisioned that launches the Cribl Logstream single instance template in the managed account. 
- 	
-
- 
-**kmmahaj@amazon.com**
