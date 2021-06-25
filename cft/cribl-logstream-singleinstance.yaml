@@ -87,40 +87,40 @@ Metadata:
 
 Conditions:
   customAmiId: !Not [!Equals [!Ref 'amiId', '']]
-Mappings:
-  RegionMap:
-    ap-northeast-1:
-      HVM64: ami-0cbe35fe3369e2cec
-    ap-northeast-2:
-      HVM64: ami-07401b38ef370952d
-    ap-south-1:
-      HVM64: ami-0f5583889909416a3
-    ap-southeast-1:
-      HVM64: ami-07922dfb076d9dff0
-    ap-southeast-2:
-      HVM64: ami-0cfad55e0f35e221c
-    ca-central-1:
-      HVM64: ami-0daedb8807c9f698c
-    eu-central-1:
-      HVM64: ami-00bad1298916d9c41
-    eu-north-1:
-      HVM64: ami-0b0eaf02f9ebd0d00
-    eu-west-1:
-      HVM64: ami-0279df2a47f474fd7
-    eu-west-2:
-      HVM64: ami-085339296b6501cfe
-    eu-west-3:
-      HVM64: ami-0f53a7a605fc2f125
-    sa-east-1:
-      HVM64: ami-017e1edfd42506bd3
-    us-east-1:
-      HVM64: ami-0bd4afca7615eaf02
-    us-east-2:
-      HVM64: ami-060fcad952f8c7ac2
-    us-west-1:
-      HVM64: ami-0045e68670bcb895f
-    us-west-2:
-      HVM64: ami-0fbc0c13309157f84
+Mappings: 
+    RegionMap: 
+        ap-northeast-1: 
+            HVM64: ami-04f2ab0ed5224ea06
+        ap-northeast-2: 
+            HVM64: ami-00a8380db3977a3ea
+        ap-south-1: 
+            HVM64: ami-0d4810b51996b7fc9
+        ap-southeast-1: 
+            HVM64: ami-0f4db7bdc027785dd
+        ap-southeast-2: 
+            HVM64: ami-04cb6ed8139e15aaf
+        ca-central-1: 
+            HVM64: ami-0223c0066cdc0c581
+        eu-central-1: 
+            HVM64: ami-0a2afb6700d59ee09
+        eu-north-1: 
+            HVM64: ami-0a1291effc7d8ba95
+        eu-west-1: 
+            HVM64: ami-09548fe69920de562
+        eu-west-2: 
+            HVM64: ami-0faf2c0970ac6021f
+        eu-west-3: 
+            HVM64: ami-034ea768d744c79c8
+        sa-east-1: 
+            HVM64: ami-06925c3ccf66f0aba
+        us-east-1: 
+            HVM64: ami-02a3fddc24829370e
+        us-east-2: 
+            HVM64: ami-078c42009ca7b8fe1
+        us-west-1: 
+            HVM64: ami-0a2e2b4285d0c0a81
+        us-west-2: 
+            HVM64: ami-067d1297ade81bcdb
 Resources:
   
   VPC:
